@@ -49,11 +49,7 @@ $(document).ready(function () {
     }
 
 
-
-    //Getting full data of one user
-    // $( "button" ).on( "click", function() {
-    //     console.log( $( this ).text() );
-    // });
+    ////////////////////////////// -- Getting full data of one user -- //////////////////////////////
     $(document).on("click", "button", function () {
         $('.specs').remove();
         console.log(url_user + $(this).attr('user'));
@@ -69,7 +65,7 @@ $(document).ready(function () {
     })
     function mountUserData(result) {
         $('#fixed_div').append(`
-            <div class="specs">
+            <div class="specs" id="mobile-center">
                 <img src="${result.avatar_url}" alt="">
                 <p>Cadastrado em ${formatDate(result.created_at)}</p>
             </div>

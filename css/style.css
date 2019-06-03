@@ -27,6 +27,78 @@
 
     }
 }
+@media only screen and (max-width: 638px){
+    #mobile-center{
+        text-align: center;
+    }
+    #wrapper {
+        width: 100%;
+        position: fixed;
+        top: 20px;
+        display: none;
+        z-index: 3;
+        opacity: 1;
+    }
+    #fixed_div {
+        border-radius: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 90%;
+        height: 95%;
+        background-color: white;
+        display: block;
+    }
+    .specs{
+        display: block;
+    }
+    
+    .section{
+        margin: 4px 10px;
+        display: block;
+    }
+    .specs img{
+        margin-top: 4px;
+        width: 250px;
+        height: 250px;
+    }
+
+}
+@media only screen and (min-width: 638px){
+    #wrapper {
+        width: 100%;
+        position: fixed;
+        top: 150px;
+        display: none;
+        z-index: 3;
+        opacity: 1;
+    }
+    #fixed_div {
+        border-radius: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 608px;
+        min-height: 384px;
+        background-color: white;
+        display: block;
+    }
+    .specs{
+        margin: 20px 0 0 16px;   
+        vertical-align:top;
+        display: inline-block;
+    }
+    .section{
+        margin: 16px 0;
+        display: block;
+    }
+    .specs img{
+        width: 288px;
+        height: 288px;
+    }
+
+}
+
 
 body{
     font-weight: bold;
@@ -125,7 +197,7 @@ input{
     color: white;
 }
 
-#wrapper {
+/* #wrapper {
     width: 100%;
     position: fixed;
     top: 150px;
@@ -139,20 +211,20 @@ input{
     margin-right: auto;
     position: relative;
     width: 608px;
-    height: 384px;
+    min-height: 384px;
     background-color: white;
     display: block;
 }
 .specs{
-    display: inline-block;
     margin: 20px 0 0 16px;   
     vertical-align:top;
     display: inline-block;
-}
-.specs img{
+    border: 1px solid yellow;
+} */
+/* .specs img{
     width: 288px;
     height: 288px;
-}
+} */
 .specs p{
     font-size: 14px;
 }
@@ -161,10 +233,10 @@ input{
 }
 
 
-.section{
+/* .section{
     margin: 16px 0;
     display: block;
-}
+} */
 #first{
     margin-top: 0;
 }
